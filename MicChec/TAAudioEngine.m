@@ -37,6 +37,10 @@
         _audioController.automaticLatencyManagement = YES;
         [_audioController start:nil];
     }
+    NSError *error = nil;
+    if (![_audioController setInputEnabled:YES error:&error]) {
+        NSLog(@"ERROR: setInputEnabled: %@", [error localizedDescription]);
+    }
 }
 
 @end

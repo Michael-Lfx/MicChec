@@ -19,6 +19,19 @@ class MasterViewController: UITableViewController {
 
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 100.0
+        
+        let session = AVAudioSession.sharedInstance()
+        do {
+            try session.setCategory(AVAudioSessionCategoryPlayAndRecord)
+        } catch {
+            print("session.setCategory error")
+        }
+        do {
+            try session.setActive(true)
+        } catch {
+            print("session.setActive error")
+        }
+        print("\(session.sessionText())")
     }
 
     override func didReceiveMemoryWarning() {
