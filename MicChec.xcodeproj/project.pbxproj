@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		D2450CF81C9C33D6000A8D15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2450CF71C9C33D6000A8D15 /* AppDelegate.swift */; };
 		D2450CFA1C9C33D6000A8D15 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2450CF91C9C33D6000A8D15 /* MasterViewController.swift */; };
-		D2450CFC1C9C33D6000A8D15 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2450CFB1C9C33D6000A8D15 /* DetailViewController.swift */; };
 		D2450CFF1C9C33D6000A8D15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2450CFD1C9C33D6000A8D15 /* Main.storyboard */; };
 		D2450D011C9C33D6000A8D15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2450D001C9C33D6000A8D15 /* Assets.xcassets */; };
 		D2450D041C9C33D6000A8D15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2450D021C9C33D6000A8D15 /* LaunchScreen.storyboard */; };
+		D2450D0C1C9C377B000A8D15 /* AVAudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2450D0B1C9C377B000A8D15 /* AVAudioSession.swift */; };
+		D2450D141C9C3D15000A8D15 /* TAAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2450D131C9C3D15000A8D15 /* TAAudioEngine.m */; };
+		DD2F4E56530D315B0D9BD04E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F31384D19EADBF48D0DE985 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044474E2CED2FD22F709AB8F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		93A990095691F30115E75440 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9F31384D19EADBF48D0DE985 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2450CF41C9C33D6000A8D15 /* MicChec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicChec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2450CF71C9C33D6000A8D15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2450CF91C9C33D6000A8D15 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		D2450CFB1C9C33D6000A8D15 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D2450CFE1C9C33D6000A8D15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2450D001C9C33D6000A8D15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2450D031C9C33D6000A8D15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2450D051C9C33D6000A8D15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2450D0B1C9C377B000A8D15 /* AVAudioSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAudioSession.swift; sourceTree = "<group>"; };
+		D2450D0D1C9C38D0000A8D15 /* MicChec-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MicChec-Bridging-Header.h"; sourceTree = "<group>"; };
+		D2450D121C9C3D15000A8D15 /* TAAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAudioEngine.h; sourceTree = "<group>"; };
+		D2450D131C9C3D15000A8D15 /* TAAudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAudioEngine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2F4E56530D315B0D9BD04E /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		575511544A2C867456F701E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F31384D19EADBF48D0DE985 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6B204221968F687B99D56D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				044474E2CED2FD22F709AB8F /* Pods.debug.xcconfig */,
+				93A990095691F30115E75440 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D2450CEB1C9C33D6000A8D15 = {
 			isa = PBXGroup;
 			children = (
 				D2450CF61C9C33D6000A8D15 /* MicChec */,
 				D2450CF51C9C33D6000A8D15 /* Products */,
+				A6B204221968F687B99D56D3 /* Pods */,
+				575511544A2C867456F701E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +84,16 @@
 		D2450CF61C9C33D6000A8D15 /* MicChec */ = {
 			isa = PBXGroup;
 			children = (
+				D2450D121C9C3D15000A8D15 /* TAAudioEngine.h */,
+				D2450D131C9C3D15000A8D15 /* TAAudioEngine.m */,
+				D2450D0B1C9C377B000A8D15 /* AVAudioSession.swift */,
 				D2450CF71C9C33D6000A8D15 /* AppDelegate.swift */,
 				D2450CF91C9C33D6000A8D15 /* MasterViewController.swift */,
-				D2450CFB1C9C33D6000A8D15 /* DetailViewController.swift */,
 				D2450CFD1C9C33D6000A8D15 /* Main.storyboard */,
 				D2450D001C9C33D6000A8D15 /* Assets.xcassets */,
 				D2450D021C9C33D6000A8D15 /* LaunchScreen.storyboard */,
 				D2450D051C9C33D6000A8D15 /* Info.plist */,
+				D2450D0D1C9C38D0000A8D15 /* MicChec-Bridging-Header.h */,
 			);
 			path = MicChec;
 			sourceTree = "<group>";
@@ -74,9 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2450D081C9C33D6000A8D15 /* Build configuration list for PBXNativeTarget "MicChec" */;
 			buildPhases = (
+				D21121AE08622A58A41C5A82 /* Check Pods Manifest.lock */,
 				D2450CF01C9C33D6000A8D15 /* Sources */,
 				D2450CF11C9C33D6000A8D15 /* Frameworks */,
 				D2450CF21C9C33D6000A8D15 /* Resources */,
+				4087AE6DCB6BA5EE4C390A37 /* Embed Pods Frameworks */,
+				E2E2E444FFE41B961A7FECFD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,14 +167,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4087AE6DCB6BA5EE4C390A37 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D21121AE08622A58A41C5A82 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2E2E444FFE41B961A7FECFD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D2450CF01C9C33D6000A8D15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2450CFC1C9C33D6000A8D15 /* DetailViewController.swift in Sources */,
 				D2450CFA1C9C33D6000A8D15 /* MasterViewController.swift in Sources */,
 				D2450CF81C9C33D6000A8D15 /* AppDelegate.swift in Sources */,
+				D2450D0C1C9C377B000A8D15 /* AVAudioSession.swift in Sources */,
+				D2450D141C9C3D15000A8D15 /* TAAudioEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,23 +332,32 @@
 		};
 		D2450D091C9C33D6000A8D15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 044474E2CED2FD22F709AB8F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MicChec/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pallotone.MicChec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MicChec/MicChec-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D2450D0A1C9C33D6000A8D15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93A990095691F30115E75440 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MicChec/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pallotone.MicChec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MicChec/MicChec-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -288,6 +380,7 @@
 				D2450D0A1C9C33D6000A8D15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
